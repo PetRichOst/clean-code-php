@@ -78,7 +78,7 @@ $ymdstr = $moment->format('y-m-d');
 $currentDate = $moment->format('y-m-d');
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Use the same vocabulary for the same type of variable
 
@@ -97,7 +97,7 @@ getUserProfile();
 getUser();
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Use searchable names (part 1)
 
@@ -161,7 +161,7 @@ if ($user->access & User::ACCESS_UPDATE) {
 $user->access ^= User::ACCESS_CREATE;
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Use explanatory variables
 
@@ -200,7 +200,7 @@ preg_match($cityZipCodeRegex, $address, $matches);
 saveCityZipCode($matches['city'], $matches['zipCode']);
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid nesting too deeply and return early (part 1)
 
@@ -250,7 +250,7 @@ function isShopOpen(string $day): bool
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid nesting too deeply and return early (part 2)
 
@@ -292,7 +292,7 @@ function fibonacci(int $n): int
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid Mental Mapping
 
@@ -331,7 +331,7 @@ foreach ($locations as $location) {
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Don't add unneeded context
 
@@ -364,7 +364,7 @@ class Car
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Use default arguments instead of short circuiting or conditionals
 
@@ -402,7 +402,7 @@ function createMicrobrewery(string $breweryName = 'Hipster Brew Co.'): void
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## Comparison
 
@@ -439,7 +439,7 @@ if ($a !== $b) {
 
 The comparison `$a !== $b` returns `TRUE`.
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Null coalescing operator
 
@@ -462,7 +462,7 @@ if (isset($_GET['name'])) {
 $name = $_GET['name'] ?? $_POST['name'] ?? 'nobody';
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## Functions
 
@@ -555,7 +555,7 @@ class Questionnaire
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Function names should say what they do
 
@@ -595,7 +595,7 @@ $message = new Email(...);
 $message->send();
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Functions should only be one level of abstraction
 
@@ -733,7 +733,7 @@ class BetterPHPAlternative
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Don't use flags as function parameters
 
@@ -768,7 +768,7 @@ function createTempFile(string $name): void
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid Side Effects
 
@@ -820,7 +820,7 @@ var_dump($name); // 'Ryan McDermott';
 var_dump($newName); // ['Ryan', 'McDermott'];
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Don't write to global functions
 
@@ -871,7 +871,7 @@ $configuration = new Configuration([
 
 And now you must use instance of `Configuration` in your application.
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Don't use a Singleton pattern
 
@@ -932,7 +932,7 @@ $connection = new DBConnection($dsn);
 
 And now you must use instance of `DBConnection` in your application.
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Encapsulate conditionals
 
@@ -952,7 +952,7 @@ if ($article->isPublished()) {
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid negative conditionals
 
@@ -983,7 +983,7 @@ if (isDOMNodePresent($node)) {
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid conditionals
 
@@ -1058,7 +1058,7 @@ class Cessna implements Airplane
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid type-checking (part 1)
 
@@ -1089,7 +1089,7 @@ function travelToTexas(Vehicle $vehicle): void
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid type-checking (part 2)
 
@@ -1125,7 +1125,7 @@ function combine(int $val1, int $val2): int
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Remove dead code
 
@@ -1162,7 +1162,7 @@ $request = requestModule($requestUrl);
 inventoryTracker('apples', $request, 'www.inventory-awesome.io');
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 
 ## Objects and Data Structures
@@ -1238,7 +1238,7 @@ $bankAccount->withdraw($shoesPrice);
 $balance = $bankAccount->getBalance();
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Make objects have private/protected members
 
@@ -1289,7 +1289,7 @@ $employee = new Employee('John Doe');
 echo 'Employee name: '.$employee->getName(); // Employee name: John Doe
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## Classes
 
@@ -1387,7 +1387,7 @@ class Employee
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Avoid fluent interfaces
 
@@ -1491,7 +1491,7 @@ $car->setModel('F-150');
 $car->dump();
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Prefer final classes
 
@@ -1559,7 +1559,7 @@ final class Car implements Vehicle
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## SOLID
 
@@ -1646,7 +1646,7 @@ class UserSettings
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Open/Closed Principle (OCP)
 
@@ -1760,7 +1760,7 @@ class HttpRequester
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Liskov Substitution Principle (LSP)
 
@@ -1888,7 +1888,7 @@ foreach ($shapes as $shape) {
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Interface Segregation Principle (ISP)
 
@@ -1979,7 +1979,7 @@ class RobotEmployee implements Workable
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ### Dependency Inversion Principle (DIP)
 
@@ -2071,7 +2071,7 @@ class Manager
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## Don’t repeat yourself (DRY)
 
@@ -2171,7 +2171,7 @@ function showList(array $employees): void
 }
 ```
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
 
 ## Translations
 
@@ -2199,4 +2199,4 @@ This is also available in other languages:
 * :tr: **Turkish:**
    * [anilozmen/clean-code-php](https://github.com/anilozmen/clean-code-php)
 
-**[⬆ back to top](#зміст)**
+**[⬆ повернутись до змісту](#зміст)**
